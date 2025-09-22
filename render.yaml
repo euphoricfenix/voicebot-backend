@@ -2,9 +2,11 @@ services:
   - type: worker
     name: agent-backend
     env: python
-    buildCommand: uv sync
-    startCommand: uv run python src/agent.py start
     plan: free
+    buildCommand: |
+      uv sync
+      uv run python src/agent.py download-files
+    startCommand: uv run python src/agent.py start
     envVars:
       - key: LIVEKIT_URL
         sync: false
