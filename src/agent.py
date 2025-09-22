@@ -18,7 +18,7 @@ from livekit.agents import (
     metrics,
 )
 from livekit.agents.llm import function_tool
-from livekit.plugins import cartesia, deepgram, noise_cancellation, openai, silero
+from livekit.plugins import cartesia, deepgram, noise_cancellation, openai
 from livekit.plugins.turn_detector.multilingual import MultilingualModel
 import json, os
 
@@ -98,7 +98,8 @@ class Assistant(Agent):
 
 
 def prewarm(proc: JobProcess):
-    proc.userdata["vad"] = silero.VAD.load()
+    #proc.userdata["vad"] = silero.VAD.load()
+    proc.userdata["vad"] = None #for render deployment
 
 
 async def entrypoint(ctx: JobContext):
@@ -122,7 +123,7 @@ async def entrypoint(ctx: JobContext):
         # VAD and turn detection are used to determine when the user is speaking and when the agent should respond
         # See more at https://docs.livekit.io/agents/build/turns
         turn_detection=MultilingualModel(),
-        vad=ctx.proc.userdata["vad"],
+        #vad=ctx.proc.userdata["vad"],
         # allow the LLM to generate a response while waiting for the end of turn
         # See more at https://docs.livekit.io/agents/build/audio/#preemptive-generation
         preemptive_generation=True,
