@@ -19,7 +19,7 @@ from livekit.agents import (
 )
 from livekit.agents.llm import function_tool
 from livekit.plugins import cartesia, deepgram, noise_cancellation, openai
-from livekit.plugins.turn_detector.multilingual import MultilingualModel
+#from livekit.plugins.turn_detector.multilingual import MultilingualModel
 import json, os
 
 
