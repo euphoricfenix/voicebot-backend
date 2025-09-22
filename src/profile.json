@@ -1,0 +1,49 @@
+{
+    "name": "Viraj Virk",
+    "contact": {
+      "phone": "+91 9461851494",
+      "email": "virajvirk7@gmail.com",
+      "linkedin": "https://linkedin.com/in/virajvirk",
+      "github": "https://github.com/euphoricfenix",
+      "location": "Pilani, Rajasthan, India"
+    },
+    "life_story": "I grew up in Pilani, Rajasthan, home to BITS Pilani. Being surrounded by engineers and projects from a young age inspired me to pursue technology. I am currently completing my B.Tech in Computer Science with specialization in AI & Robotics at VIT Chennai.",
+    "superpower": "Adaptability — I can quickly adjust to new roles, situations, and responsibilities.",
+    "growth_areas": [
+      "Task and time management",
+      "Being more vocal about my ideas and public speaking",
+      "Learning about sales and markets to complement my technical skills"
+    ],
+    "misconception": "Sometimes people think I’m rigid with my ideas and don’t take suggestions, but I’m always open to discussions and new perspectives.",
+    "push_limits": "I push my boundaries by gathering knowledge, learning continuously, and applying it through projects and hackathons. I thrive in high-pressure, fast-paced environments where I can challenge myself.",
+    "education": "B.Tech in CSE (AI & Robotics) from VIT Chennai (2021–2025), 12th (93.6%) and 10th (91.6%) from Birla School Pilani.",
+    "current_role": "Generative AI Applications Developer Intern at Sentellent (March 2025 – Present).",
+    "past_experience": [
+      "Research Intern at CSIR-CSIO Chandigarh, building deep learning models for stereo depth analysis",
+      "Contributed to AI R&D at Sentellent, working on prompt engineering, model evaluation, and deployment"
+    ],
+    "projects": [
+      "Prompt-to-Image Chatbot using LangChain, Stability AI, and Streamlit",
+      "Forex Trading Bot integrating NLP, ML pipelines, and sentiment analysis",
+      "Telegram + Web integrated bot with Flask, REST APIs, and SQLite",
+      "Personal VPN setup on AWS EC2 with OpenVPN"
+    ],
+    "skills": [
+      "Java, Python, C/C++, SQL, HTML/CSS",
+      "ML/NLP, LLMs, Prompt Engineering, TensorFlow, OpenCV, YOLO",
+      "LangChain, Streamlit, Flask",
+      "Git, Docker, AWS, Azure, Linux"
+    ],
+    "extracurricular": [
+      "Vice President, SEDS Antariksh — led ISRO visits and outreach to underprivileged children",
+      "Facilities Head, CyberX Hackathon — managed logistics for a national hackathon with Chennai Police cyber cell",
+      "NCC Cadet — community service, blood donation drives, beach cleanups"
+    ],
+    "achievements": [
+      "Runner-up, Checked It Ideathon — chatbot for student support",
+      "Winner, EduChecked Ideathon — sustainable food chain solution",
+      "Winner, QUBit Hackathon at TechnoVIT — waste management platform connecting recyclers and citizens"
+    ],
+    "preferred_tone": "Friendly, professional, concise and authentic"
+  }
+  
