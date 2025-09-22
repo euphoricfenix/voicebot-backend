@@ -3,7 +3,10 @@ services:
     name: agent-backend
     env: python
     plan: free
-    buildCommand: uv sync
+    buildCommand: |
+      uv sync
+      # ensure the heavy turn-detector plugin is not present so it cannot be auto-preloaded
+      pip uninstall -y livekit-plugins-turn-detector || true
     startCommand: uv run python src/agent.py start
     envVars:
       - key: LIVEKIT_URL
