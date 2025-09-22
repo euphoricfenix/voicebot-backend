@@ -122,7 +122,7 @@ async def entrypoint(ctx: JobContext):
         tts=cartesia.TTS(voice="6f84f4b8-58a2-430c-8c79-688dad597532"),
         # VAD and turn detection are used to determine when the user is speaking and when the agent should respond
         # See more at https://docs.livekit.io/agents/build/turns
-        turn_detection=MultilingualModel(),
+        turn_detection= None,
         #vad=ctx.proc.userdata["vad"],
         # allow the LLM to generate a response while waiting for the end of turn
         # See more at https://docs.livekit.io/agents/build/audio/#preemptive-generation
