@@ -3,9 +3,7 @@ services:
     name: agent-backend
     env: python
     plan: free
-    buildCommand: |
-      uv sync
-      uv run python src/agent.py download-files
+    buildCommand: uv sync
     startCommand: uv run python src/agent.py start
     envVars:
       - key: LIVEKIT_URL
