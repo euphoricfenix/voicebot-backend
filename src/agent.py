@@ -125,13 +125,9 @@ async def entrypoint(ctx: JobContext):
         turn_detection= None,
         #vad=ctx.proc.userdata["vad"],
         vad=None,
-        stream_response=True,
         # allow the LLM to generate a response while waiting for the end of turn
         # See more at https://docs.livekit.io/agents/build/audio/#preemptive-generation
         preemptive_generation=True,
-        room_input_options=RoomInputOptions(
-            noise_cancellation=noise_cancellation.BVC(),
-        ),
     )
 
     # To use a realtime model instead of a voice pipeline, use the following session setup instead:

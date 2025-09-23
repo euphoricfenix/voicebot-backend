@@ -1,0 +1,19 @@
+{
+    "build": {
+      "builder": "NIXPACKS",
+      "nixpacksPlan": {
+        "phases": {
+          "install": {
+            "commands": [
+              "uv sync",
+              "pip uninstall -y livekit-plugins-turn-detector livekit-plugins-silero || true"
+            ]
+          }
+        }
+      }
+    },
+    "deploy": {
+      "startCommand": "uv run python src/agent.py start"
+    }
+  }
+  
